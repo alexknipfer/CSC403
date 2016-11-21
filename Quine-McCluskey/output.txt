@@ -1,0 +1,56 @@
+                 Alex Knipfer         CSC 40300     Section 21
+                     Fall 2016       Assignment #1
+----------------------------------------------------------------------------
+
+The Original Boolean Expression is:
+(ABC) + (Abc) + (ABc) + (AbC) + (abC) + (aBc)
+
+The Minimized Boolean Expression is:
+(Bc) + (bC) + (A)
+
+**************************************************************
+
+The Original Boolean Expression is:
+(ABCD) + (ABcD) + (ABcd) + (AbCD) + (aBCD) + (aBCd) + (aBcD) + (abcD)
+
+The Minimized Boolean Expression is:
+(ACD) + (ABc) + (aBC) + (acD)
+
+**************************************************************
+
+The Original Boolean Expression is:
+(aBcDEf) + (ABcdEF) + (AbCdEF) + (ABCdEF) + (aBCDEf) + (ABCDEF) + (ABcdEf) + (AbCDEF) + (aBcDef)
+
+The Minimized Boolean Expression is:
+(aBDEf) + (aBcDf) + (ABcdE) + (ACEF)
+
+**************************************************************
+
+The Original Boolean Expression is:
+(abcde) + (AbCde) + (ABcdE) + (abCde) + (aBCDE) + (Abcde) + (abCDE) + (abCDe) + (aBcDE) + (ABCDE) + (AbCDe)
+
+The Minimized Boolean Expression is:
+(aBDE) + (BCDE) + (bde) + (bCe)
+
+**************************************************************
+
+The Original Boolean Expression is:
+(aBCdE) + (ABCde) + (ABcde) + (aBcdE) + (ABcDe) + (ABCdE) + (AbCde) + (AbCdE)
+
+The Minimized Boolean Expression is:
+(aBdE) + (ABce) + (ACd)
+
+**************************************************************
+
+The Original Boolean Expression is:
+(abCd) + (aBcd) + (Abcd) + (AbcD) + (abCD) + (aBCD) + (abcD) + (aBCd)
+
+The Minimized Boolean Expression is:
+(aBd) + (Abc) + (aC)
+
+**************************************************************
+
+
+   --------------------------------
+   |    END OF PROGRAM OUTPUT     |
+   --------------------------------
