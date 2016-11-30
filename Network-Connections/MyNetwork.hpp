@@ -9,6 +9,7 @@ class MyNetwork{
     public:
         void loadData(int, int);
         double calcDistance(int, int, int, int);
+        void createGraph();
         void calcShortest();
         void printVector();
 

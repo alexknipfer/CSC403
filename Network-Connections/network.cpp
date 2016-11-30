@@ -29,6 +29,7 @@ int main(){
         }
 
         network.printVector();
+        network.createGraph();
         network.calcShortest();
 
             //get next network
@@ -52,13 +53,18 @@ void MyNetwork::loadData(int x, int y){
 
 //******************************************************************************
 
-void MyNetwork::calcShortest(){
-    int iterate = 0;
-    int maxSize = xCoordinates.size();
+void MyNetwork::createGraph(){
+        //Receives - nothing
+        //Task - creates adjacency matrix of nodes in network
+        //Returns - nothing
 
-    //double smallest = calcDistance(xCoordinates[0], xCoordinates[1], yCoordinates[0], yCoordinates[1]);
+    int iterate = 0;
+
+        //go through all x and y coordinates of current network
     for(int y = 0; y < xCoordinates.size(); y++){
         for(int x = iterate; x < xCoordinates.size() - 1; x++){
+
+                //calculate the distance between two nodes
             double currDistance = calcDistance(xCoordinates[iterate], xCoordinates[x + 1], yCoordinates[iterate], yCoordinates[x + 1]);
             data myData;
             myData.x1 = xCoordinates[iterate];
@@ -66,17 +72,31 @@ void MyNetwork::calcShortest(){
             myData.y1 = yCoordinates[iterate];
             myData.y2 = yCoordinates[x + 1]; 
             myData.distance = currDistance;
-            myGraph[iterate][x] = myData;
+
+                //add the node to the matrix
+            myGraph[iterate][x + 1] = myData;
         }
         iterate++;
     }
+}
 
+//******************************************************************************
+
+void MyNetwork::calcShortest(){
     for(int x = 0; x < xCoordinates.size(); x++){
         for(int y = 0; y < yCoordinates.size(); y++){
             cout << myGraph[x][y].distance << " ";
         }
         cout << endl;
     }
+    cout << endl;
+    cout << endl;
+
+    /*for(int x = 0; x < xCoordinates.size(); x++){
+        for(int y = 0; y < yCoordinates.size(); y++){
+
+        }
+    }*/
 }
 
 //******************************************************************************
